@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+}
+:root {
+    font-size: 62.5%;
+}
+html,
+body {
+    height: 80vh;
+}
+body {
+    box-sizing: border-box;
+    padding: 2rem 1rem 1rem 1rem;
+    margin: 0 auto;
+    width: 100vw;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(24, 23, 25, 1);
+    font-family: Poppins;
+}
+header {
+    box-shadow: 0px 6px 5px rgba(0, 0, 0, 0.25);
+    top: 0;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(24, 23, 25, 1);
+    width: 100vw;
+    height: 8%;
+    left: 0;
+}
+header nav {
+    visibility: hidden;
+}
+
+@media (min-width:900px) {
+    main  {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10rem;
+    }
+    body {
+        padding: 0rem 3rem 3rem 3rem;
+    }
+    main #description {
+        width:30% !important;
+    }
+    main #autor {
+        width:52%;
+    }
+    main #description p {
+        font-size: 2.4rem !important;
+        line-height: 2.9rem !important;
+    }
+    main #description h1 {
+        font-size: 4.8rem !important;
+    }
+    main #autor .interior_image {
+        max-height: 586px;
+    }
+    main #autor #interior_designer {
+        position: relative;
+        bottom: 10%;
+    }
+    main #autor #interior_designer .designer_text h2 {
+        font-size: 2.1rem;
+    }
+    header nav {
+        visibility: visible;
+        position: fixed;
+        right: 5%;
+    }
+    header nav .nav_home,
+    header nav .nav_collection,
+    header nav .nav_about {
+        color: #ffffff;
+        text-decoration: none;
+        margin-right: 10rem;
+        font-size: 1.8rem;
+    }
+    header nav .nav_home {
+        border-bottom: 2px solid #d4ac3e;
+    }
+    header nav .nav_contact {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 1.8rem;
+    }
+}

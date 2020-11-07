@@ -1,0 +1,27 @@
+@media (max-width:900px) {
+	.menu_nav {
+		background: #ffffff;
+		padding: 1rem;
+		margin: 0;
+	
+		height: 100%;
+		width: 100%;
+		max-width: 320px;
+	
+		position: fixed;
+		z-index: 1;
+		top: 0;
+		left: -100%;
+
+		transition: left 0.3s ease-out;
+	}
+	.menu_active .menu_nav {
+		left: 0;
+	}
+}
+@media not all and (max-width:900px){
+	.menu_open,
+    .menu_close {
+        display: none;
+    }
+}
